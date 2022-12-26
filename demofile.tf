@@ -1,19 +1,19 @@
 locals {
-  arr {"host1", "host2", "host3"}
+  arr = "host1"
 }
 
 locals {
-  arr2 {"host1", "host2", "host3"}
+  arr2 = "host2"
 }
 
 locals {
-  arr3 {"host1", "host2", "host3"}
+  arr3 = "host3"
 }
 
 output "test" {
   value = local.arr
 }
 
-output "test" {
+output "test2" {
   value = local.arr3
 }
